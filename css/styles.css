@@ -1,0 +1,108 @@
+:root {
+    --background-color: #C9E4CA;
+
+    --primary-color: #3B6064;
+    --secondary-color: #55828B;
+
+    --btn-color: #55828B;
+    --btn-hover-color: #87BBA2;
+
+    --font-color: #364958;
+    --light-font-color: #C9E4CA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+    box-sizing: border-box;
+    color: var(--font-color);
+}
+
+.container {
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.todolist {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: var(--light-font-color);
+}
+
+.todos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.todo_element {
+    display: flex;
+    width: 700px;
+    min-height: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    align-self: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background: var(--btn-hover-color);
+    border: 2px solid var(--font-color);
+}
+
+input{
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    width: 75%;
+    height:50px;
+    align-self: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 0.5px;
+    padding-left:25px;
+    border: 3px solid var(--font-color);
+    color: var(--font-color);
+}
+
+input:focus{
+    background: var(--btn-hover-color);
+    outline:none;
+}
+
+.checked{
+    color: var(--light-font-color);
+    text-decoration:line-through;
+}
+
+.todos li:hover span{
+    width: 25px;
+    opacity: 1.0;
+    margin-left: 5px;
+}
