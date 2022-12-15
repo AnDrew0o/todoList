@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap');*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 :root {
     --background-color: #C9E4CA;
 
@@ -19,6 +28,11 @@
     color: var(--font-color);
 }
 
+.body
+{
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
 .container {
     position: fixed;
     overflow: auto;
@@ -28,6 +42,7 @@
     height: 100%;
     width: 100%;
     background-color: var(--background-color);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 .todolist {
@@ -37,12 +52,14 @@
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    box-shadow: 0 10px 35px #364958;
 }
 
 .title {
     text-align: center;
     padding: 20px;
     color: var(--light-font-color);
+    text-shadow: 0 5px 10px #364958;
 }
 
 .todos {
@@ -61,8 +78,10 @@
     min-height: 50px;
     margin: 0 10px 10px 10px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: var(--secondary-color);
+    color: var(--light-font-color);
+    box-shadow: 0 10px 15px #364958;
 }
 
 button {
@@ -94,6 +113,11 @@ input{
     color: var(--font-color);
 }
 
+input::placeholder
+{
+    color: var(--light-font-color);
+}
+
 input:focus{
     background: var(--btn-hover-color);
     outline:none;
@@ -108,4 +132,5 @@ input:focus{
     width: 25px;
     opacity: 1.0;
     margin-left: 5px;
+    margin-right: 10px;
 }
