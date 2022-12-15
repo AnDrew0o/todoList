@@ -51,12 +51,15 @@
     flex-wrap: wrap;
 }
 
+.fa-solid
+{
+    margin-right: 10px;
+}
+
 .todo_element {
     display: flex;
-    width: 700px;
     min-height: 50px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 0 10px 10px 10px;
     padding: 10px;
     border-radius: 10px;
     background-color: var(--secondary-color);
