@@ -18,6 +18,8 @@
 
     --font-color: #364958;
     --light-font-color: #C9E4CA;
+
+    --shadow-color: #364958;
 }
 
 * {
@@ -28,11 +30,6 @@
     color: var(--font-color);
 }
 
-.body
-{
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-}
-
 .container {
     position: fixed;
     overflow: auto;
@@ -41,8 +38,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: var(--background-color);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(45deg, var(--secondary-color) 0%, var(--background-color) 100%);
 }
 
 .todolist {
@@ -52,14 +48,14 @@
     display: flex;
     flex-direction: column;
     margin: 20px 0;
-    box-shadow: 0 10px 35px #364958;
+    box-shadow: 0 10px 35px var(--shadow-color);
 }
 
 .title {
     text-align: center;
     padding: 20px;
     color: var(--light-font-color);
-    text-shadow: 0 5px 10px #364958;
+    text-shadow: 0 5px 10px var(--shadow-color);
 }
 
 .todos {
@@ -82,7 +78,7 @@
     border-radius: 8px;
     background-color: var(--secondary-color);
     color: var(--light-font-color);
-    box-shadow: 0 10px 15px #364958;
+    box-shadow: 0 10px 15px var(--shadow-color);
 }
 
 .todo_element:hover span
@@ -99,6 +95,7 @@
 }
 
 button {
+    color: var(--light-font-color);
     background-color: var(--btn-color);
     border: none;
     border-radius: 10px;
@@ -113,6 +110,7 @@ button:hover {
     background: var(--btn-hover-color);
     border: 2px solid var(--font-color);
     transition: 250ms;
+    color: var(--font-color);
 }
 
 input{
@@ -148,8 +146,8 @@ input:focus::placeholder
 }
 
 .checked{
-    color: var(--light-font-color);
-    background-color: #fdbb2d;
+    color: var(--font-color);
+    background-color: var(--btn-hover-color);
     text-decoration:line-through;
     transition: 200ms;
 }
