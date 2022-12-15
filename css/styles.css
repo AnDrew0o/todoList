@@ -65,6 +65,7 @@
 .todos {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -106,10 +107,12 @@ button {
     align-self: center;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: 250ms;
 }
 button:hover {
     background: var(--btn-hover-color);
     border: 2px solid var(--font-color);
+    transition: 250ms;
 }
 
 input{
@@ -124,6 +127,7 @@ input{
     padding-left:25px;
     border: 3px solid var(--font-color);
     color: var(--font-color);
+    transition: 150ms;
 }
 
 input::placeholder
@@ -131,12 +135,21 @@ input::placeholder
     color: var(--light-font-color);
 }
 
-input:focus{
+
+input:focus {
     background: var(--btn-hover-color);
     outline:none;
+    transition: 150ms;
+}
+
+input:focus::placeholder
+{
+    color: var(--font-color);
 }
 
 .checked{
     color: var(--light-font-color);
+    background-color: #fdbb2d;
     text-decoration:line-through;
+    transition: 200ms;
 }
