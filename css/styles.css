@@ -84,6 +84,19 @@
     box-shadow: 0 10px 15px #364958;
 }
 
+.todo_element:hover span
+{
+    width: 25px;
+    opacity: 1.0;
+    margin-left: 5px;
+    margin-right: 10px;
+    transition: 500ms;
+}
+.todo_element span
+{
+    transition: 500ms;
+}
+
 button {
     background-color: var(--btn-color);
     border: none;
@@ -126,11 +139,4 @@ input:focus{
 .checked{
     color: var(--light-font-color);
     text-decoration:line-through;
-}
-
-.todos li:hover span{
-    width: 25px;
-    opacity: 1.0;
-    margin-left: 5px;
-    margin-right: 10px;
 }
